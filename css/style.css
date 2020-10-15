@@ -1,0 +1,300 @@
+*{
+    box-sizing: inherit; 
+}
+
+html{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ol,
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    height: auto;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* noto-serif-regular - latin */
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Serif'), local('NotoSerif'),
+         url('../fonts/noto-serif-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-serif-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* marck-script-regular - latin */
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'),
+         url('../fonts/marck-script-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/marck-script-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+         url('../fonts/montserrat-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 0;
+    align-items: center;
+}
+
+.nav-list{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list-item:hover .nav-list-item-link{
+    color: #fed136;
+}
+
+.nav-list-item:not(:last-child){
+    margin-right: 40px; 
+}
+
+.nav-logo-link{
+    font-family: "Marck Script";
+    color: #fed136;
+    font-size: 26px;
+    line-height: 41px;
+    text-transform: capitalize;
+}
+
+.nav-list-item-link{
+    color: #222222;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 41px;
+}
+
+h2.services-title{
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #222222;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.services-text{
+    padding: 60px 0 78px;
+}
+
+.services-description{
+    font-family: 'Noto Serif';
+    font-size: 16px;
+    color: #777777;
+    text-align: center;
+    margin: 14px 0 0 0;
+}
+
+.services-list{
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 940px;
+}
+
+.services-list-item{
+    width: 290px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.services-list-item-title{
+    text-transform: capitalize;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #222222;
+    font-size: 18px;
+}
+
+.services-list-item-description{
+    font-family: 'Roboto Slab';
+    color: #777777;
+    font-size: 14px;
+    letter-spacing: .35;
+    line-height: 1.2;
+
+}
+
+.services-list-item::before{
+    content: "";
+    display: block;
+    width: 73px;
+    height: 73px;
+    margin: 0 auto;
+    border: 4px solid #fed136;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 26px;
+}
+
+.services-list-item:nth-child(1)::before{
+    background-image: url("../img/img1.png");
+}
+
+.services-list-item:nth-child(2)::before{
+    background-image: url("../img/img2.png");
+}
+
+.services-list-item:nth-child(3)::before{
+    background-image: url("../img/img3.png");
+}
+
+.services{
+    padding-bottom: 120px;
+}
+
+
+.contact-us{
+    background-color: rgb(34, 34, 34);
+    background-image: url("../img/map.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 110px 0;
+}
+
+.contact-us-title.services-title{
+    color: #ffffff;
+}
+
+.input-textarea{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    flex-basis: 940px;
+    margin-bottom: 27px;
+}
+
+ul.sign-up-input-list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 459px;
+}
+
+.sign-up-input-list-item-input{
+    display: inline-block;
+    width: 100%;
+    height: 52px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    padding-left: 21px;
+}
+.sign-up-text{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.sign-up-input-list-item-input::placeholder,
+.sign-up-textarea::placeholder{
+    text-transform: uppercase;
+    color: #bbbbbb;
+
+}
+.sign-up-input-list-item:not(:last-child){
+    margin-bottom: 27px;
+}
+.sign-up-textarea{
+    width: 459px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    padding-left: 21px;
+    padding-top: 16px;
+    resize: none;
+}
+
+.sign-up-btn{
+    display: block;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    width: 242px;
+    height: 68px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.sign-up-btn-font-style{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+.sign-up-input-list-item-input:required:focus,
+.sign-up-textarea:required:focus{
+    outline: none;
+}
+.sign-up-input-list-item-input:required:focus:valid:not(:placeholder-shown),
+.sign-up-textarea:required:focus:valid:not(:placeholder-shown){
+    border-color: green;
+}
+
+.sign-up-input-list-item-input:required:focus:invalid:not(:placeholder-shown),
+.sign-up-textarea:required:focus:invalid:not(:placeholder-shown){
+    border-color: red;
+}
